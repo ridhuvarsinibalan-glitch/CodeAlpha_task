@@ -1,0 +1,198 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Futuristic iPod</title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <!-- FONT AWESOME -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+</head>
+
+<body>
+
+  <div class="background-glow"></div>
+
+  <div class="player-layout">
+
+    <!-- LEFT PANEL -->
+
+    <div class="ipod">
+
+      <!-- SCREEN -->
+
+      <div class="screen">
+
+        <div class="album-container">
+
+          <img
+            src=""
+            class="album-art"
+            id="cover"
+          />
+
+        </div>
+
+        <!-- SONG INFO -->
+
+        <div class="song-info">
+
+          <h2 id="title">
+            Loading...
+          </h2>
+
+          <p id="artist">
+            Artist
+          </p>
+
+        </div>
+
+        <!-- EQUALIZER -->
+
+        <div class="equalizer">
+
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
+        <!-- PROGRESS -->
+
+        <div
+          class="progress-container"
+          id="progressContainer"
+        >
+
+          <div
+            class="progress"
+            id="progress"
+          ></div>
+
+        </div>
+
+        <!-- TIME -->
+
+        <div class="time">
+
+          <span id="currentTime">
+            0:00
+          </span>
+
+          <span id="duration">
+            0:00
+          </span>
+
+        </div>
+
+        <!-- VOLUME -->
+
+        <div class="volume-display">
+
+          VOL
+          <span id="volumeValue">
+            50
+          </span>%
+
+        </div>
+
+      </div>
+
+      <!-- CLICK WHEEL -->
+
+      <div class="wheel" id="wheel">
+
+        <!-- VOLUME UP -->
+
+        <button class="top-btn volume-up">
+          +
+        </button>
+
+        <!-- VOLUME DOWN -->
+
+        <button class="bottom-btn volume-down">
+          -
+        </button>
+
+        <!-- PREVIOUS -->
+
+        <button
+          class="left-btn"
+          id="prev"
+        >
+          <i class="fas fa-backward"></i>
+        </button>
+
+        <!-- NEXT -->
+
+        <button
+          class="right-btn"
+          id="next"
+        >
+          <i class="fas fa-forward"></i>
+        </button>
+
+        <!-- CENTER PLAY -->
+
+        <button
+          class="center-btn"
+          id="play"
+        >
+
+          <i
+            class="fas fa-play"
+            id="playIcon"
+          ></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT PLAYLIST PANEL -->
+
+    <div class="playlist-panel">
+
+      <h2>In Queue</h2>
+
+      <div
+        class="playlist"
+        id="playlist"
+      ></div>
+
+    </div>
+
+  </div>
+
+  <!-- AUDIO -->
+
+  <audio id="audio"></audio>
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
